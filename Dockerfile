@@ -10,4 +10,4 @@ RUN wget $(curl -s https://api.github.com/repos/jagrosh/MusicBot/releases/latest
 
 COPY ./config.txt ./
 
-CMD java -Dnogui=true -jar /JMusicBot-*.jar
+CMD java -Dnogui=true -jar ./JMusicBot-*.jar
