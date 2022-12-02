@@ -1,10 +1,8 @@
-FROM alpine
+FROM amazoncorretto:8u352-al2
 
 WORKDIR /usr/app
 
-RUN apk add openjdk11 --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
-
-RUN apk add wget grep curl
+RUN yum install -y wget grep curl
 
 RUN wget $(curl -s https://api.github.com/repos/jagrosh/MusicBot/releases/latest | grep 'browser_' | cut -d\" -f4) 
 
