@@ -1,4 +1,4 @@
-FROM amazoncorretto:8u352-al2
+FROM amazoncorretto:20
 
 WORKDIR /usr/app
 
