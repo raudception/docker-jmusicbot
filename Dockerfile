@@ -1,4 +1,4 @@
-FROM amazoncorretto:20
+FROM amazoncorretto:20.0.1-al2
 
 WORKDIR /usr/app
 
